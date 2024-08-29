@@ -7,6 +7,13 @@
 
 import SwiftUI
 
+struct Student {
+    var id: UUID
+    var name: String
+}
+
+
+
 struct ContentView: View {
     var body: some View {
         VStack {
