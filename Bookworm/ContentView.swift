@@ -7,15 +7,10 @@
 
 import SwiftUI
 
-struct Student {
-    var id: UUID
-    var name: String
-}
-
-
 
 struct ContentView: View {
-    
+    @FetchRequest(sortDescriptors: []) var students: FetchedResults<Student>
+
     var body: some View {
         Text("Hello, world!")
         .padding()
