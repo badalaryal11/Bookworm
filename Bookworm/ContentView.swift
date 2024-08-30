@@ -24,12 +24,12 @@ struct ContentView: View {
                 let chosenFirstName = firstNames.randomElement()!
                 let chosenLastName = lastNames.randomElement()!
 
-//                let student = Student(context: moc)
-//                student.id = UUID()
-//                student.name = "\(chosenFirstName) \(chosenLastName)"
-//                
-//                try? moc.save()
-//            }
+                let student = Student(context: moc)
+                student.id = UUID()
+                student.name = "\(chosenFirstName) \(chosenLastName)"
+
+                //try? moc.save()
+            }
             
         }
         
